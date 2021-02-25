@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+@testable import DKCamera
 
 class DKCameraDemoTests: XCTestCase {
     
@@ -23,7 +24,7 @@ class DKCameraDemoTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        
     }
     
     func testPerformanceExample() {

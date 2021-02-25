@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.3
 
 import PackageDescription
 
@@ -16,7 +16,13 @@ let package = Package(
         .target(
             name: "DKCamera",
             dependencies: [],
-            path: "DKCamera"
-        )
+            path: "DKCamera",
+            resources: [
+                .process("Images")
+            ]
+        ),
+        .testTarget(
+            name: "DKCameraTests",
+            dependencies: ["DKCamera"]),
     ]
 )
